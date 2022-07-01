@@ -18,15 +18,25 @@ function FormRead(){
             <table>
                 <tr>
                     <td>
-                        Nama :
+                        <label for="nama">
+                            Nama
+                        </label>
+                    </td>
+                    <td>
+                        :
                     </td>
                     <td>
                         <input type="text" name="" id="nama"/>
                     </td>
                 </tr>
                 <tr>
-                <td>
-                        Pekerjaan :
+                    <td>
+                        <label for="pekerjaan">
+                            Pekerjaan    
+                        </label> 
+                    </td>
+                    <td>
+                        :
                     </td>
                     <td>
                         <input type="text" name="" id="pekerjaan"/>
