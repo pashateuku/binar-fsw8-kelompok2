@@ -14,15 +14,41 @@ function FormEdit(){
     return(
         <>
             <form onSubmit={submit}>
-                <label for="nama">Nama:
-                    <input type="text" id="nama" name="nama"/>
-                </label>
-                <br />
-                <label for="umur">Umur :
-                    <input type="umur" id="umur" name="umur" />
-                </label>
-                <br/>
-               <button type="submit" > Kirim </button>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="nama">Nama
+                                
+                            </label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input type="text" id="nama" name="nama"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="umur">
+                                Umur
+                            </label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            <input type="umur" id="umur" name="umur" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" > Kirim </button></td>
+                        <td></td>
+                        <td></td>
+                    </tr>                    
+                    
+                    
+                </table>                
             </form>
             <p>{tampil && 
                 <>
