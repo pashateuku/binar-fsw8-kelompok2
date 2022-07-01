@@ -14,17 +14,42 @@ function Form(){
     return(
         <>
             <form onSubmit={submit}>
-                <label for="username">Username:
-                    <input type="text" id="username" name="username"/>
-                </label>
-                <br />
-                <label for="password">Password :
-                    <input type="password" id="password" name="password" />
-                </label>
-                <br/>
-               <button type="submit" > Kirim </button>
-            </form>
-            <p>{tampil && 
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Username
+                                
+                            </label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <input type="text" id="username" name="username"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">
+                                Password
+                            </label>
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                        <input type="password" id="password" name="password" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" > Kirim </button></td>
+                        <td></td>
+                        <td></td>
+                    </tr>                    
+                    
+                </table>  
+             </form>
+             <p>{tampil && 
                 <>
                 <span >username</span> : {username}
                 <br/>
@@ -33,7 +58,9 @@ function Form(){
                 </>
             }
             </p>
-        </>
+            </>   
+                
+           
     )
 }
 
